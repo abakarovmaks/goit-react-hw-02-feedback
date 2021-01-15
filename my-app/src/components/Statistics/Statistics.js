@@ -7,7 +7,7 @@ export default function Statistics({
   neutral,
   bad,
   total,
-  positiveFeedback,
+  positivePercentage,
 }) {
   return (
     <Fragment>
@@ -16,7 +16,9 @@ export default function Statistics({
         <li className={styles.item}>Neutral: {neutral}</li>
         <li className={styles.item}>Bad: {bad}</li>
         <li className={styles.item}>Total: {total}</li>
-        <li className={styles.item}>Positive feedback: {positiveFeedback} %</li>
+        <li className={styles.item}>
+          Positive feedback: {positivePercentage} %
+        </li>
       </ul>
     </Fragment>
   );
@@ -27,5 +29,5 @@ Statistics.propTypes = {
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
-  positiveFeedback: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };

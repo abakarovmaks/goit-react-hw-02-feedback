@@ -12,6 +12,12 @@ export default class App extends Component {
     bad: 0,
   };
 
+  // countTotalFeedback() {
+  //   const { good, neutral, bad } = this.state;
+
+  //   return bad + good + neutral;
+  // }
+
   render() {
     return (
       <Container>
