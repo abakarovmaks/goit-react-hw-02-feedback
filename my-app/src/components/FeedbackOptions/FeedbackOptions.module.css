@@ -1,17 +1,19 @@
 .btn {
-  padding: 5px 7px;
-  margin-bottom: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
 
-  min-width: 100px;
+  min-width: 120px;
 
   font-family: Roboto, sans-serif;
 
   color: white;
-  background-color: grey;
+  background-color: rgb(179, 174, 174);
 
   border: none;
   outline: none;
-  border-radius: 5px;
+  border-radius: 10px;
+
+  cursor: pointer;
 }
 
 .btn:not(:last-child) {
@@ -20,8 +22,18 @@
 
 .btn:hover,
 .btn:focus {
-  background-color: orange;
+  background-color: rgb(162, 240, 188);
   color: black;
+}
+.btn:hover:nth-child(2n-1),
+.btn:focus:nth-child(2n-1) {
+  background-color: rgb(134, 131, 131);
+  color: black;
+}
+
+.btn:hover:last-child {
+  background-color: rgb(207, 97, 83);
+  color: white;
 }
 
 .feedbackBtns {
