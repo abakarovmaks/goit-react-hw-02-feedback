@@ -29,7 +29,6 @@ export default class App extends Component {
     this.setState(prevState => ({
       [feedbackType]: prevState[feedbackType] + 1,
     }));
-    target.blur();
   };
 
   render() {
