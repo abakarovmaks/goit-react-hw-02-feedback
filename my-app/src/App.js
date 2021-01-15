@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Container from './components/Container/Container';
 import Section from './components/Section/Section';
 import Statistics from './components/Statistics/Statistics';
+import Notification from './components/Notification/Notification';
 
 export default class App extends Component {
   state = {
@@ -17,6 +18,7 @@ export default class App extends Component {
         <Section title="Please leave feedback" />
         <Section title="Statistics" />
         <Statistics />
+        <Notification message="No feedback given!" />
       </Container>
     );
   }
