@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Controls.module.css';
+import styles from './FeedbackOptions.module.css';
 
 const btn = ({ feedbackType, onLeaveFeedback }) => {
   return (
@@ -20,6 +20,6 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
 }
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  options: PropTypes.array.isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
