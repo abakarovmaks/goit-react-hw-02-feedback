@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Btn.module.css';
+import styles from './Button.module.css';
 
-const Btn = ({ feedbackType, onLeaveFeedback }) => {
+const Button = ({ feedbackType, onLeaveFeedback }) => {
   return (
     <button
       className={styles.btn}
@@ -15,8 +15,8 @@ const Btn = ({ feedbackType, onLeaveFeedback }) => {
   );
 };
 
-Btn.propTypes = {
+Button.propTypes = {
   onLeaveFeedback: PropTypes.func.isRequired,
 };
 
-export default Btn;
+export default Button;
